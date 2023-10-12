@@ -17,7 +17,21 @@ body {
 
 .sidebar {
   background-color: blue;
+  color: white;
   grid-row: 1 / -1;
+
+
+}
+
+.dashboard1,
+.dashboard2,
+.dashboard3 {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+.sidebard img {
+  
 }
 
 .header {
