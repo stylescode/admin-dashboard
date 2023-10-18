@@ -4,45 +4,154 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!---->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="main-container">
     <div class="sidebar">
-      <div class="dashboard1">
+      <div class="d1 dashboard">
         <img src="icons/view-dashboard.svg" alt="dashboard icon">
         <div>Dashboard</div>
       </div>
-      <div class="dashboard2">
+      <div class="d2 dashboard">
         <img src="icons/home.svg" alt="home icon">
-        <div>Home</div>
+        <a href="www.google.com">Home</a>
         <img src="icons/profile.svg" alt="profile icon">
-        <div>Profile</div>
+        <a href="">Profile</a>
         <img src="icons/messages.svg" alt="messages icon">
-        <div>Messages</div>
+        <a href="">Messages</a>
         <img src="icons/history.svg" alt="history icon">
-        <div>History</div>
+        <a href="">History</a>
         <img src="icons/tasks.svg" alt="tasks icon">
-        <div>Tasks</div>
+        <a href="">Tasks</a>
         <img src="icons/communities.svg" alt="communities icon">
-        <div>Communities</div>
+        <a href="">Communities</a>
       </div>
-      <div class="dashboard3">
+      <div class="d3 dashboard">
         <img src="icons/settings.svg" alt="settings icon">
-        <div>Settings</div>
+        <a href="">Settings</a>
         <img src="icons/support.svg" alt="support icon">
-        <div>Support</div>
+        <a href="">Support</a>
         <img src="icons/privacy.svg" alt="privacy icon">
-        <div>Privacy</div>
+        <a href="">Privacy</a>
 
       </div>
     </div>
 
     <div class="header">
+      <div class="header-top">
+        <div class="search-container">
+          <img src="icons/magnify.svg" alt="search icon">
+          <form action="">
+            <input type="search" class="search-bar">
+          </form>
+        </div>
+        <div class="notification-center">
+          <img src="icons/notification1.svg" alt="notification icon" >
+          <img src="avatars/scorpion.png" alt="" class="profile-icon"> <!-- For profile icon -->
+          <div class="username">Hank Scorpio</div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <img src="avatars/scorpion.png" alt=""> <!--For profile icon -->
+        <div class="welcome">
+          <div>Hi there,</div>
+          <div class="username">Hank Scorprio <span class="handle">(@HankScorpion)</span></div>
+        </div>
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
 
     </div>
 
     <div class="main-content">
+      <div class="projects-title">Your Projects</div>
+      <div class="projects">
+        <div class="project-card">
+          <div class="card-title">Super Cool Project</div>
+          <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus fuga saepe libero accusantium, quisquam soluta dignissimos. Perferendis odit, facere eius inventore sed optio voluptate repellat, molestias accusantium doloribus ab omnis.</div>
+          <img src="icons/star-plus-outline.svg" alt="" class="favorite">
+          <img src="icons/eye-plus-outline.svg" alt="" class="read">
+          <img src="icons/share-variant-outline.svg" alt="" class="share">
+        </div>
+        <div class="project-card">
+          <div class="card-title">Less Cool Project</div>
+          <div class="card-content">Accusamus beatae, ut impedit fuga architecto vel nisi minima doloremque est maiores optio sed inventore eum perferendis soluta repudiandae eligendi, asperiores adipisci.</div>
+          <img src="icons/star-plus-outline.svg" alt="" class="favorite">
+          <img src="icons/eye-plus-outline.svg" alt="" class="read">
+          <img src="icons/share-variant-outline.svg" alt="" class="share">
+        </div>
+        <div class="project-card">
+          <div class="card-title">Impossible App</div>
+          <div class="card-content">Quae molestiae iste facilis amet aperiam, odit quisquam. Veritatis, assumenda! Vero quas ipsam facilis doloribus aliquid rem eveniet maiores? Deserunt, suscipit perspiciatis?</div>
+          <img src="icons/star-plus-outline.svg" alt="" class="favorite">
+          <img src="icons/eye-plus-outline.svg" alt="" class="read">
+          <img src="icons/share-variant-outline.svg" alt="" class="share">
+        </div>
+        <div class="project-card">
+          <div class="card-title">Easy Peasy App</div>
+          <div class="card-content">Expedita velit alias saepe sapiente quasi? Exercitationem dolor deserunt eos excepturi doloribus! A magni tempore cupiditate placeat consectetur recusandae dolores modi suscipit.</div>
+          <img src="icons/star-plus-outline.svg" alt="" class="favorite">
+          <img src="icons/eye-plus-outline.svg" alt="" class="read">
+          <img src="icons/share-variant-outline.svg" alt="" class="share">
+        </div>
+        <div class="project-card">
+          <div class="card-title">Ad Blocker</div>
+          <div class="card-content">Ipsa delectus temporibus doloremque facere inventore iste veritatis similique reprehenderit ducimus unde debitis maiores, esse non quaerat veniam ab, quisquam consectetur nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nam architecto, dolore dolorum perspiciatis fugit perferendis repellendus ipsam maxime earum quo voluptates, voluptatem, vel enim consequuntur! Atque saepe modi odio!</div>
+          <img src="icons/star-plus-outline.svg" alt="" class="favorite">
+          <img src="icons/eye-plus-outline.svg" alt="" class="read">
+          <img src="icons/share-variant-outline.svg" alt="" class="share">
+        </div>
+        <div class="project-card">
+          <div class="card-title">Money Maker</div>
+          <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore est perspiciatis voluptas, tempora corporis repellat, laboriosam, temporibus magnam dolor accusamus officiis facilis nisi porro quos voluptatem. Iusto, rerum. Tempore, vitae!</div>
+          <img src="icons/star-plus-outline.svg" alt="" class="favorite">
+          <img src="icons/eye-plus-outline.svg" alt="" class="read">
+          <img src="icons/share-variant-outline.svg" alt="" class="share">
+        </div>
+      </div>
+      <div class="announcements-title">Announcements</div>
+      <div class="announcements">
+        
+
+      </div>
+      <div class="trending-title">Trending</div>
+      <div class="trending">
+        <div class="trending-user">
+          <img src="avatars/dog.png" alt="">
+          <div class="trending-info">
+            <div class="handle">@homer</div>
+            <div class="name">Nuclear Power</div>
+          </div>
+        </div>
+        <div class="trending-user">
+          <img src="avatars/owl.png" alt="">
+          <div class="trending-info">
+            <div class="handle">@moe</div>
+            <div class="name">Bartending Specialist</div>
+          </div>
+        </div>
+        <div class="trending-user">
+          <img src="avatars/giraffe.png" alt="">
+          <div class="trending-info">
+            <div class="handle">krabapple</div>
+            <div class="name">Education Specialist</div>
+          </div>
+        </div>
+        <div class="trending-user">
+          <img src="avatars/deer.png" alt="">
+          <div class="trending-info">
+            <div class="handle">duffman</div>
+            <div class="name">Brand Ambassador</div>
+          </div>
+        </div>
+      </div>
 
     </div>
 

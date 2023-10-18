@@ -1,4 +1,5 @@
 * {
+  font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -8,36 +9,173 @@ body {
   height: 100vh;
 }
 
+img {
+  width: 24px;
+}
+
 .main-container {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template: 0.7fr 3fr / 0.7fr 3fr;
+  grid-template: 0.7fr 3fr / 270px 1fr;
 }
 
 .sidebar {
-  background-color: blue;
+  background-color: rgb(16, 151, 230);
   color: white;
   grid-row: 1 / -1;
 
 
 }
 
-.dashboard1,
-.dashboard2,
-.dashboard3 {
+.dashboard {
   display: grid;
-  grid-template-columns: 30px 1fr;
+  font-size: 19px;
+  font-weight: bolder;
+  grid-template-columns: 28px 1fr;
+  align-items: center;
+  gap: 22px;
+  margin-left: 22px;
 }
 
-.sidebard img {
-  
+.dashboard a {
+  text-decoration: none;
+  color: white;
+}
+
+.dashboard a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.dashboard img {
+  filter: invert(1);
+}
+
+.d1 {
+  font-size: 26px;
+  margin: 16px 0 44px 12px;
+  gap: 26px;
+
+}
+
+.d1 img {
+  width: 44px;
+}
+
+.d3 {
+  position: absolute;
+  bottom: 30px;
 }
 
 .header {
-  background-color: red;
+  background-color: rgb(254, 254, 254);
+  display: grid;
+  grid-template-rows: 55px auto;
+  padding: 8px 50px 10px 40px;
+  font-weight: bold;
 }
 
+.header-top {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  align-items: center;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.search-container form input {
+  background-color: rgb(230, 234, 243);
+  border: none;
+  border-radius: 50px;
+  height: 28px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 80%;
+}
+
+.notification-center {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.notification-center .profile-icon {
+  width: 40px;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: auto 1fr 115px 115px 115px;
+  align-items: center;
+
+}
+
+.header-bottom img {
+  padding-right: 20px;
+  width: 60px;
+}
+
+.header-bottom .welcome {
+  font-size: 12px;
+}
+
+.welcome .username {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.header-bottom button {
+  background-color: rgb(16, 151, 230);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  width: 90px;
+  justify-self: end;
+}
+
+
+
 .main-content {
-  background-color: green;
+  background-color: rgb(217, 227, 233);
+  display: grid;
+  gap: 20px;
+  grid-template: 1fr 4fr 1fr 4fr / 2fr 1fr;
+}
+
+.projects {
+  grid-row: 2 / -1;
+}
+
+.project-card {
+  background-color: white;
+}
+
+.card-title {
+  grid-column: 1 / -1;
+}
+
+.card-content {
+  grid-column: 1 / -1;
+}
+
+.favorite {
+  grid-column: 2;
+}
+
+.read {
+  grid-column: 3;
+}
+
+.share {
+  grid-column: 4;
 }
