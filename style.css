@@ -17,7 +17,7 @@ img {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template: 0.7fr 3fr / 270px 1fr;
+  grid-template: 140px 1fr / 270px 1fr;
 }
 
 .sidebar {
@@ -34,7 +34,7 @@ img {
   font-weight: bolder;
   grid-template-columns: 28px 1fr;
   align-items: center;
-  gap: 22px;
+  gap: 20px;
   margin-left: 22px;
 }
 
@@ -148,34 +148,94 @@ img {
 .main-content {
   background-color: rgb(217, 227, 233);
   display: grid;
-  gap: 20px;
-  grid-template: 1fr 4fr 1fr 4fr / 2fr 1fr;
+  grid-template: repeat(4, auto) / 1fr 260px;
+  padding: 20px 30px 40px 16px;
+}
+
+.content-title {
+  align-self: end;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 8px;
 }
 
 .projects {
   grid-row: 2 / -1;
+
+  display: grid;
+  grid-template: repeat(3, auto) / repeat(2, auto);
 }
 
 .project-card {
   background-color: white;
+  border-left: 7px solid rgb(207, 207, 0);
+  border-radius: 7px;
+  height: 150px;
+  padding: 20px 10px 20px 18px;
+  width: 300px;
+
+  display: grid;
+  grid-template-rows: auto 90px auto;
+  gap: 2px;
 }
 
 .card-title {
-  grid-column: 1 / -1;
+  font-size: 17px;
+  font-weight: 700;
+
+  align-self: end;
 }
 
 .card-content {
-  grid-column: 1 / -1;
+  color: rgb(73, 73, 73);
+  font-size: 14px;
 }
 
-.favorite {
-  grid-column: 2;
+.interaction {
+  align-self: end;
+  justify-self: end;
 }
 
-.read {
-  grid-column: 3;
+.interaction img {
+  padding-right: 18px;
+  width: 22px;
 }
 
-.share {
-  grid-column: 4;
+.announcements {
+  background-color: white;
+  border-radius: 7px;
+  height: 300px;
+  padding: 15px 10px;
+}
+
+.announcements .msg .title {
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.announcements .msg {
+  color: rgb(73, 73, 73);
+  font-size: 12px;
+  height: 45px;
+  padding: 15px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.trending {
+  background-color: white;
+  border-radius: 7px;
+  font-size: 12px;
+  width: 250px;
+
+  display: grid;
+  grid-template: repeat(4, 50px) / repeat(2, auto);
+  align-items: center;
+
+}
+
+.trending img {
+  justify-self: center;
+  width: 40px;
 }
